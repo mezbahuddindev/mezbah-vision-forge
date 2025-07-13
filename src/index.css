@@ -117,23 +117,31 @@
   body {
     @apply bg-background text-foreground font-inter;
     overflow-x: hidden;
+    font-size: 16px;
   }
   
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Mobile-first responsive improvements */
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
   }
 }
 
 @layer components {
   /* Hero button variants */
   .btn-hero {
-    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground px-8 py-4 rounded-lg font-semibold;
+    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-sm sm:text-base;
     @apply hover:scale-105 active:scale-95 transition-all duration-300;
     @apply shadow-lg hover:shadow-glow;
   }
   
   .btn-outline-hero {
-    @apply border-2 border-primary text-primary bg-transparent px-8 py-4 rounded-lg font-semibold;
+    @apply border-2 border-primary text-primary bg-transparent px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-sm sm:text-base;
     @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
     @apply hover:scale-105 active:scale-95;
   }

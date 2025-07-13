@@ -69,10 +69,10 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-glow">
               Skills & Expertise
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
               A growing arsenal of skills combining entrepreneurial leadership with cutting-edge technology expertise
             </p>
           </div>
@@ -90,7 +90,7 @@ const Skills = () => {
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {category.skills.map((skill, skillIndex) => (
                       <div key={skillIndex} className="space-y-2">
                         <div className="flex justify-between items-center">
@@ -118,7 +118,7 @@ const Skills = () => {
               Tools & Technologies
             </h2>
             <div className="card-futuristic p-8">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {tools.map((tool, index) => (
                   <div key={index} className="text-center p-4 bg-secondary/30 rounded-lg hover:bg-secondary/50 transition-colors">
                     <div className="text-lg font-semibold">{tool.name}</div>

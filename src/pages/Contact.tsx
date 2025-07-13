@@ -158,7 +158,7 @@ const Contact = () => {
                 <h2 className="text-3xl font-bold mb-6 text-primary">Send a Message</h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium mb-2">
                         Full Name

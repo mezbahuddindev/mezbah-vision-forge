@@ -40,19 +40,19 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <div className="text-center lg:text-left animate-slide-in-left">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
                 <span className="text-glow">Mezbah</span>
                 <br />
                 <span className="text-primary">Uddin</span>
               </h1>
               
-              <div className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+              <div className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
                 <div className="mb-2">Young Entrepreneur</div>
                 <div className="mb-2">Future Tech Visionary</div>
                 <div className="text-primary font-semibold">CEO & Founder of Navodesh Tech</div>
               </div>
               
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
+              <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
                 Building tomorrow's national security infrastructure today through innovative AI solutions 
                 and cutting-edge surveillance technologies from Bangladesh.
               </p>
@@ -73,7 +73,7 @@ const Index = () => {
             <div className="flex justify-center lg:justify-end animate-slide-in-right">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-glow rounded-full blur-2xl opacity-20 animate-pulse-glow" />
-                <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/30 animate-float">
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/30 animate-float">
                   <img
                     src="/lovable-uploads/1e4eadb9-a125-427c-8a34-02b880582eb6.png"
                     alt="Mezbah Uddin - Young Entrepreneur & Tech Visionary"
@@ -99,7 +99,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}

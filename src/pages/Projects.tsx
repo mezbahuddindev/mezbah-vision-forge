@@ -61,10 +61,10 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-glow">
               Projects & Innovations
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
               Building tomorrow's security infrastructure today. Explore our flagship project and upcoming innovations.
             </p>
           </div>
@@ -84,7 +84,7 @@ const Projects = () => {
                   {mainProject.description}
                 </p>
 
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   {mainProject.features.map((feature, index) => (
                     <div key={index} className="flex items-start gap-3 p-4 bg-secondary/50 rounded-lg">
                       {feature.icon}
@@ -141,7 +141,7 @@ const Projects = () => {
             <h2 className="text-3xl font-bold mb-8 text-center text-primary">
               Future Innovations Pipeline
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {futureProjects.map((project, index) => (
                 <div key={index} className="card-futuristic p-6 hover:animate-pulse-glow">
                   <h3 className="text-xl font-bold mb-3">{project.title}</h3>

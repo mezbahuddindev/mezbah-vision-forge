@@ -28,10 +28,10 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16 animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-glow">
               About Me
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
               Young entrepreneur with a vision to revolutionize national security through AI innovation
             </p>
           </div>
@@ -88,7 +88,7 @@ const About = () => {
           {/* Values Section */}
           <div className="animate-fade-in-up">
             <h2 className="text-3xl font-bold text-center mb-12 text-primary">Core Values</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               {values.map((value, index) => (
                 <div key={index} className="card-futuristic p-6 text-center hover:animate-pulse-glow">
                   <div className="flex justify-center mb-4">
