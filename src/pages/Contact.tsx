@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Github, Facebook } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -36,14 +36,14 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6 text-primary" />,
       title: "Email",
-      value: "mezbah@navodeshtech.com",
-      link: "mailto:mezbah@navodeshtech.com"
+      value: "info@mezbahuddindev.online",
+      link: "mailto:info@mezbahuddindev.online"
     },
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
       title: "Phone",
-      value: "+880 1XXX-XXXXXX",
-      link: "tel:+8801XXXXXXXX"
+      value: "01875224445",
+      link: "tel:+8801875224445"
     },
     {
       icon: <MapPin className="w-6 h-6 text-primary" />,
@@ -57,20 +57,20 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/mezbahuddin",
+      url: "#",
       color: "hover:text-blue-600"
     },
     {
       icon: <Github className="w-6 h-6" />,
       name: "GitHub",
-      url: "https://github.com/mezbahuddin",
+      url: "#",
       color: "hover:text-gray-400"
     },
     {
-      icon: <Twitter className="w-6 h-6" />,
-      name: "Twitter",
-      url: "https://twitter.com/mezbahuddin",
-      color: "hover:text-blue-400"
+      icon: <Facebook className="w-6 h-6" />,
+      name: "Facebook",
+      url: "https://www.facebook.com/share/1CNLy19Jix/",
+      color: "hover:text-blue-500"
     }
   ];
 
