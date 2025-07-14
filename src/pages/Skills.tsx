@@ -34,12 +34,12 @@ const Skills = () => {
       icon: <Code className="w-8 h-8 text-primary" />,
       description: "Programming and development skills in progress",
       skills: [
-        { name: "Python", level: 80, description: "Core programming for AI/ML" },
-        { name: "HTML/CSS", level: 80, description: "Web development fundamentals" },
-        { name: "JavaScript", level: 80, description: "Frontend interactivity" },
-        { name: "SQL & Databases", level: 80, description: "Data storage and retrieval" },
-        { name: "Git & Version Control", level: 80, description: "Code collaboration" },
-        { name: "API Integration", level: 80, description: "Connecting systems and services" }
+        { name: "Python", level: 45, description: "Core programming for AI/ML" },
+        { name: "HTML/CSS", level: 55, description: "Web development fundamentals" },
+        { name: "JavaScript", level: 35, description: "Frontend interactivity" },
+        { name: "SQL & Databases", level: 40, description: "Data storage and retrieval" },
+        { name: "Git & Version Control", level: 50, description: "Code collaboration" },
+        { name: "API Integration", level: 42, description: "Connecting systems and services" }
       ]
     }
   ];

@@ -31,48 +31,49 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-12">
+      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Background Animation */}
         <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-secondary/20" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]" />
         
-        <div className="relative z-10 w-full max-w-7xl mx-auto">
-          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center min-h-[calc(100vh-140px)]">
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
-            <div className="order-2 lg:order-1 text-center lg:text-left animate-slide-in-left space-y-4 sm:space-y-6 w-full">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[0.9] tracking-tight">
-                <span className="block text-glow">Mezbah</span>
-                <span className="block text-primary mt-1 sm:mt-2">Uddin</span>
+            <div className="text-center lg:text-left animate-slide-in-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
+                <span className="text-glow">Mezbah</span>
+                <br />
+                <span className="text-primary">Uddin</span>
               </h1>
               
-              <div className="text-base sm:text-lg lg:text-xl text-muted-foreground space-y-1 sm:space-y-2 font-medium">
-                <div>Young Entrepreneur</div>
-                <div>Future Tech Visionary</div>
-                <div className="text-primary font-bold">CEO & Founder of Navodesh Tech</div>
+              <div className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+                <div className="mb-2">Young Entrepreneur</div>
+                <div className="mb-2">Future Tech Visionary</div>
+                <div className="text-primary font-semibold">CEO & Founder of Navodesh Tech</div>
               </div>
               
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
                 Building tomorrow's national security infrastructure today through innovative AI solutions 
                 and cutting-edge surveillance technologies from Bangladesh.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="btn-hero inline-flex items-center justify-center gap-2">
                   Hire Me
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <ArrowRight className="w-5 h-5" />
                 </Link>
                 <Link to="/projects" className="btn-outline-hero inline-flex items-center justify-center gap-2">
                   View Projects
-                  <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <Shield className="w-5 h-5" />
                 </Link>
               </div>
             </div>
             
             {/* Profile Image */}
-            <div className="order-1 lg:order-2 flex justify-center animate-slide-in-right w-full">
+            <div className="flex justify-center lg:justify-end animate-slide-in-right">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-glow rounded-full blur-3xl opacity-20 animate-pulse-glow" />
-                <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[400px] xl:h-[400px] rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl animate-float">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary-glow rounded-full blur-2xl opacity-20 animate-pulse-glow" />
+                <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/30 animate-float">
                   <img
                     src="/lovable-uploads/1e4eadb9-a125-427c-8a34-02b880582eb6.png"
                     alt="Mezbah Uddin - Young Entrepreneur & Tech Visionary"
