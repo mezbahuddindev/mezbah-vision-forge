@@ -70,27 +70,27 @@ const Projects = () => {
           </div>
 
           {/* Main Project - Navodesh Security Vision */}
-          <div className="card-futuristic p-8 mb-12 animate-slide-in-left">
-            <div className="flex flex-col lg:flex-row gap-8">
+          <div className="card-futuristic p-6 sm:p-8 mb-12 animate-slide-in-left hover-lift">
+            <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
               <div className="lg:w-2/3">
-                <div className="flex items-center gap-3 mb-4">
-                  <h2 className="text-3xl font-bold text-primary">{mainProject.title}</h2>
-                  <span className="px-3 py-1 bg-primary/20 text-primary text-sm font-semibold rounded-full">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-primary">{mainProject.title}</h2>
+                  <span className="px-3 py-1 bg-primary/20 text-primary text-xs sm:text-sm font-semibold rounded-full self-start">
                     Flagship Project
                   </span>
                 </div>
                 
-                <p className="text-lg mb-6 text-muted-foreground leading-relaxed">
+                <p className="text-base sm:text-lg mb-6 text-muted-foreground leading-relaxed">
                   {mainProject.description}
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
                   {mainProject.features.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-3 p-4 bg-secondary/50 rounded-lg">
+                    <div key={index} className="flex items-start gap-3 p-3 sm:p-4 bg-secondary/50 rounded-lg hover-lift">
                       {feature.icon}
                       <div>
-                        <h4 className="font-semibold mb-1">{feature.title}</h4>
-                        <p className="text-sm text-muted-foreground">{feature.description}</p>
+                        <h4 className="font-semibold mb-1 text-sm sm:text-base">{feature.title}</h4>
+                        <p className="text-xs sm:text-sm text-muted-foreground">{feature.description}</p>
                       </div>
                     </div>
                   ))}
@@ -98,37 +98,37 @@ const Projects = () => {
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {mainProject.technologies.map((tech, index) => (
-                    <span key={index} className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
+                    <span key={index} className="px-2 sm:px-3 py-1 bg-primary/10 text-primary text-xs sm:text-sm font-medium rounded-full">
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex items-center gap-4">
-                  <span className="px-4 py-2 bg-accent/20 text-accent font-semibold rounded-lg">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                  <span className="px-3 sm:px-4 py-2 bg-accent/20 text-accent font-semibold rounded-lg text-sm self-start">
                     {mainProject.status}
                   </span>
-                  <span className="text-muted-foreground">
+                  <span className="text-sm text-muted-foreground">
                     Timeline: {mainProject.timeline}
                   </span>
                 </div>
               </div>
 
               <div className="lg:w-1/3">
-                <div className="bg-gradient-to-br from-primary/20 to-primary-glow/20 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold mb-4 text-center">Project Impact</h3>
+                <div className="bg-gradient-to-br from-primary/20 to-primary-glow/20 p-4 sm:p-6 rounded-lg hover-glow">
+                  <h3 className="text-lg sm:text-xl font-bold mb-4 text-center">Project Impact</h3>
                   <div className="space-y-3">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary">99%+</div>
-                      <div className="text-sm text-muted-foreground">Recognition Accuracy</div>
+                      <div className="text-xl sm:text-2xl font-bold text-primary">99%+</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground">Recognition Accuracy</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary">Real-time</div>
-                      <div className="text-sm text-muted-foreground">Processing Speed</div>
+                      <div className="text-xl sm:text-2xl font-bold text-primary">Real-time</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground">Processing Speed</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary">Enterprise</div>
-                      <div className="text-sm text-muted-foreground">Grade Security</div>
+                      <div className="text-xl sm:text-2xl font-bold text-primary">Enterprise</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground">Grade Security</div>
                     </div>
                   </div>
                 </div>
@@ -141,18 +141,18 @@ const Projects = () => {
             <h2 className="text-3xl font-bold mb-8 text-center text-primary">
               Future Innovations Pipeline
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {futureProjects.map((project, index) => (
-                <div key={index} className="card-futuristic p-6 hover:animate-pulse-glow">
-                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                <div key={index} className="card-futuristic p-4 sm:p-6 hover-lift hover-glow">
+                  <h3 className="text-lg sm:text-xl font-bold mb-3">{project.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
+                    <span className="px-3 py-1 bg-secondary text-secondary-foreground text-xs sm:text-sm font-medium rounded-full self-start">
                       {project.status}
                     </span>
-                    <span className="text-sm text-muted-foreground">
+                    <span className="text-xs sm:text-sm text-muted-foreground">
                       {project.timeframe}
                     </span>
                   </div>
@@ -162,10 +162,10 @@ const Projects = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16 animate-fade-in-up">
-            <div className="card-futuristic p-8">
-              <h3 className="text-2xl font-bold mb-4">Interested in Collaboration?</h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+          <div className="text-center mt-12 sm:mt-16 animate-fade-in-up">
+            <div className="card-futuristic p-6 sm:p-8 hover-lift">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4">Interested in Collaboration?</h3>
+              <p className="text-sm sm:text-base text-muted-foreground mb-6 max-w-2xl mx-auto leading-relaxed">
                 Whether you're an investor, government agency, or technology partner, 
                 I'd love to discuss how we can work together to strengthen national security through innovation.
               </p>
